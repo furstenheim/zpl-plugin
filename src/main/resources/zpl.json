@@ -1,21 +1,12 @@
 [
   {
     "code": "^A",
-    "definition": "",
-    "format": [],
-    "description": [
-      ""
-    ],
-    "parameters": []
-  },
-  {
-    "code": "^A",
     "definition": "Scalable/Bitmapped Font",
     "format": [
       "^A@o,h,w,d:o.x"
     ],
     "description": [
-      "Description The ^A command specifies the font to use in a text field. ^A designates the font",
+      "The ^A command specifies the font to use in a text field. ^A designates the font",
       "for the current ^FD statement or field. The font specified by ^A is used only once for that ^FD",
       "entry. If a value for ^A is not specified again, the default ^CF font is used for the next ^FD",
       "entry."
@@ -65,7 +56,7 @@
       "^B0a,b,c,d,e,f,g"
     ],
     "description": [
-      "Description The ^B0 command creates a two-dimensional matrix symbology made up of",
+      "The ^B0 command creates a two-dimensional matrix symbology made up of",
       "square modules arranged around a bulls-eye pattern at the center."
     ],
     "parameters": [
@@ -113,7 +104,7 @@
       "^B1o,e,h,f,g"
     ],
     "description": [
-      "Description The ^B1 command produces the Code 11 bar code, also known as USD-8",
+      "The ^B1 command produces the Code 11 bar code, also known as USD-8",
       "code. In a Code 11 bar code, each character is composed of three bars and two spaces, and the",
       "character set includes 10 digits and the hyphen (-).",
       " • ^B1 supports print ratios of 2.0:1 to 3.0:1.",
@@ -149,7 +140,7 @@
       "^B2o,h,f,g,e,j"
     ],
     "description": [
-      "Description The ^B2 command produces the Interleaved 2 of 5 bar code, a high-density,",
+      "The ^B2 command produces the Interleaved 2 of 5 bar code, a high-density,",
       "self-checking, continuous, numeric symbology."
     ],
     "parameters": [
@@ -182,7 +173,7 @@
       "^B3o,e,h,f,g,j,m,n"
     ],
     "description": [
-      "Description The Code 39 bar code is the standard for many industries, including the U.S.",
+      "The Code 39 bar code is the standard for many industries, including the U.S.",
       "Department of Defense. It is one of three symbologies identified in the American National",
       "Standards Institute (ANSI) standard MH10.8M-1983. Code 39 is also known as USD-3 Code",
       "and 3 of 9 Code."
@@ -217,7 +208,7 @@
       "^B4o,h,f,m"
     ],
     "description": [
-      "Description The ^B4 command creates a multi-row, continuous, variable-length",
+      "The ^B4 command creates a multi-row, continuous, variable-length",
       "symbology capable of encoding the full 128-character ASCII set. It is ideally suited for",
       "applications requiring large amounts of data in a small space."
     ],
@@ -259,7 +250,7 @@
       "^B5o,h,f,g"
     ],
     "description": [
-      "Description The ^B5 command is supported in all printers as a resident bar code."
+      "The ^B5 command is supported in all printers as a resident bar code."
     ],
     "parameters": [
       "o = orientation code       Accepted Values:",
@@ -289,7 +280,7 @@
       "^B7o,h,s,c,r,t"
     ],
     "description": [
-      "Description The ^B7 command produces the PDF417 bar code, a two-dimensional,",
+      "The ^B7 command produces the PDF417 bar code, a two-dimensional,",
       "multirow, continuous, stacked symbology. PDF417 is capable of encoding over",
       "1,000 characters per bar code. It is ideally suited for applications requiring large amounts of",
       "information at the time the bar code is read."
@@ -340,7 +331,7 @@
       "^B8o,h,f,g"
     ],
     "description": [
-      "Description The ^B8 command is the shortened version of the EAN-13 bar code. EAN is",
+      "The ^B8 command is the shortened version of the EAN-13 bar code. EAN is",
       "an acronym for European Article Numbering. Each character in the EAN-8 bar code is",
       "composed of four elements: two bars and two spaces.",
       " • ^B8 supports a fixed ratio.",
@@ -375,7 +366,7 @@
       "^B9,h,f,g,e"
     ],
     "description": [
-      "Description The ^B9 command produces a variation of the UPC symbology used for",
+      "The ^B9 command produces a variation of the UPC symbology used for",
       "number system 0. It is a shortened version of the UPC-A bar code, where zeros are suppressed,",
       "resulting in codes that require less printing space. The 6 dot/mm,",
       "12 dot/mm, and 24 dot/mm printheads produce the UPC and EAN symbologies at",
@@ -412,7 +403,7 @@
       "^BAo,h,f,g,e"
     ],
     "description": [
-      "Description The ^BA command creates a variable length, continuous symbology. The Code",
+      "The ^BA command creates a variable length, continuous symbology. The Code",
       "93 bar code is used in many of the same applications as Code 39. It uses the full 128-character",
       "ASCII set. ZPL II, however, does not support ASCII control codes or escape sequences. It uses",
       "the substitute characters shown below."
@@ -447,7 +438,7 @@
       "^BBo,h,s,c,r,m"
     ],
     "description": [
-      "Description The ^BB command produces a two-dimensional, multirow, stacked",
+      "The ^BB command produces a two-dimensional, multirow, stacked",
       "symbology. It is ideally suited for applications that require large amounts of information."
     ],
     "parameters": [
@@ -507,7 +498,7 @@
       "^BCo,h,f,g,e,m"
     ],
     "description": [
-      "Description The ^BC command creates the Code 128 bar code, a high-density, variable",
+      "The ^BC command creates the Code 128 bar code, a high-density, variable",
       "length, continuous, alphanumeric symbology. It was designed for complexly encoded product",
       "identification."
     ],
@@ -565,7 +556,7 @@
       "^BDm,n,t"
     ],
     "description": [
-      "Description The ^BD command creates a two-dimensional, optically read (not scanned)",
+      "The ^BD command creates a two-dimensional, optically read (not scanned)",
       "code. This symbology was developed by UPS (United Parcel Service)."
     ],
     "parameters": [
@@ -627,7 +618,7 @@
       "^BEo,h,f,g"
     ],
     "description": [
-      "Description The ^BE command is similar to the UPC-A bar code. It is widely used",
+      "The ^BE command is similar to the UPC-A bar code. It is widely used",
       "throughout Europe and Japan in the retail marketplace."
     ],
     "parameters": [
@@ -656,7 +647,7 @@
       "^BFo,h,m"
     ],
     "description": [
-      "Description The ^BF command creates a two-dimensional, multi-row, continuous, stacked",
+      "The ^BF command creates a two-dimensional, multi-row, continuous, stacked",
       "symbology identical to PDF417, except it replaces the 17-module-wide start and stop patterns",
       "and left/right row indicators with a unique set of 10-module-wide row address patterns. These",
       "reduce overall symbol width and allow linear scanning at row heights as low as 2X."
@@ -681,7 +672,7 @@
       "^BIo,h,f,g"
     ],
     "description": [
-      "Description The ^BI command is a discrete, self-checking, continuous numeric",
+      "The ^BI command is a discrete, self-checking, continuous numeric",
       "symbology. The Industrial 2 of 5 bar code has been in use the longest of the 2 of 5 family of",
       "bar codes. Of that family, the Standard 2 of 5 (^BJ) and Interleaved 2 of 5 (^B2) bar codes are",
       "also available in ZPL II."
@@ -712,7 +703,7 @@
       "^BJo,h,f,g"
     ],
     "description": [
-      "Description The ^BJ command is a discrete, self-checking, continuous numeric",
+      "The ^BJ command is a discrete, self-checking, continuous numeric",
       "symbology."
     ],
     "parameters": [
@@ -741,7 +732,7 @@
       "^BKo,e,h,f,g,k,l"
     ],
     "description": [
-      "Description The ANSI Codabar bar code is used in a variety of information processing",
+      "The ANSI Codabar bar code is used in a variety of information processing",
       "applications such as libraries, the medical industry, and overnight package delivery companies.",
       "This bar code is also known as USD-4 code, NW-7, and 2 of 7 code. It was originally",
       "developed for retail price labeling."
@@ -777,7 +768,7 @@
       "^BLo,h,g"
     ],
     "description": [
-      "Description The ^BL command is a special application of Code 39 used by the Department",
+      "The ^BL command is a special application of Code 39 used by the Department",
       "of Defense. LOGMARS is an acronym for Logistics Applications of Automated Marking and",
       "Reading Symbols.",
       "    •   ^BL supports a print ratio of 2.0:1 to 3.0:1.",
@@ -807,7 +798,7 @@
       "^BMo,e,h,f,g,e2"
     ],
     "description": [
-      "Description The ^BM command is a pulse-width modulated, continuous, non-self- checking",
+      "The ^BM command is a pulse-width modulated, continuous, non-self- checking",
       "symbology. It is a variant of the Plessey bar code (^BP)."
     ],
     "parameters": [
@@ -847,7 +838,7 @@
       "^BOa,b,c,d,e,f,g"
     ],
     "description": [
-      "Description The ^BO command creates a two-dimensional matrix symbology made up of",
+      "The ^BO command creates a two-dimensional matrix symbology made up of",
       "square modules arranged around a bulls-eye pattern at the center."
     ],
     "parameters": [
@@ -895,7 +886,7 @@
       "^BPo,e,h,f,g"
     ],
     "description": [
-      "Description The ^BP command is a pulse-width modulated, continuous, non-self- checking",
+      "The ^BP command is a pulse-width modulated, continuous, non-self- checking",
       "symbology."
     ],
     "parameters": [
@@ -930,7 +921,7 @@
       "^BQa,b,c,d,e"
     ],
     "description": [
-      "Description The ^BQ command produces a matrix symbology consisting of an array of",
+      "The ^BQ command produces a matrix symbology consisting of an array of",
       "nominally square modules arranged in an overall square pattern. A unique pattern at three of",
       "the symbol’s four corners assists in determining bar code size, position, and inclination."
     ],
@@ -963,7 +954,7 @@
       "^BRa,b,c,d,e,f"
     ],
     "description": [
-      "Description The ^BR command is bar code types for space-constrained identification from",
+      "The ^BR command is bar code types for space-constrained identification from",
       "EAN International and the Uniform Code Council, Inc."
     ],
     "parameters": [
@@ -1009,7 +1000,7 @@
       "^BSo,h,f,g"
     ],
     "description": [
-      "Description The ^BS command is the two-digit and five-digit add-on used primarily by",
+      "The ^BS command is the two-digit and five-digit add-on used primarily by",
       "publishers to create bar codes for ISBNs (International Standard Book Numbers). These",
       "extensions are handled as separate bar codes."
     ],
@@ -1039,7 +1030,7 @@
       "^BTo,w1,r1,h1,w2,h2"
     ],
     "description": [
-      "Description The ^BT bar code is the standard for the TCIF can tag telecommunications",
+      "The ^BT bar code is the standard for the TCIF can tag telecommunications",
       "equipment."
     ],
     "parameters": [
@@ -1079,7 +1070,7 @@
       "^BUo,h,f,g,e"
     ],
     "description": [
-      "Description The ^BU command produces a fixed length, numeric symbology. It is primarily",
+      "The ^BU command produces a fixed length, numeric symbology. It is primarily",
       "used in the retail industry for labeling packages. The UPC-A bar code has",
       "11 data characters. The 6 dot/mm, 12 dot/mm, and 24 dot/mm printheads produce the UPC-A",
       "bar code (UPC/EAN symbologies) at 100 percent size. However, an 8 dot/mm printhead",
@@ -1118,7 +1109,7 @@
       "^BXo,h,s,c,r,f,g"
     ],
     "description": [
-      "Description The ^BX command creates a two-dimensional matrix symbology made up of",
+      "The ^BX command creates a two-dimensional matrix symbology made up of",
       "square modules arranged within a perimeter finder pattern."
     ],
     "parameters": [
@@ -1190,7 +1181,7 @@
       "^BYw,r,h"
     ],
     "description": [
-      "Description The ^BY command is used to change the default values for the module width",
+      "The ^BY command is used to change the default values for the module width",
       "(in dots), the wide bar to narrow bar width ratio and the bar code height (in dots). It can be",
       "used as often as necessary within a label format."
     ],
@@ -1211,7 +1202,7 @@
       "^BZo,h,f,g"
     ],
     "description": [
-      "Description The POSTNET bar code is used to automate the handling of mail. POSTNET",
+      "The POSTNET bar code is used to automate the handling of mail. POSTNET",
       "uses a series of five bars, two tall and three short, to represent the digits 0 to 9.",
       "    •   ^BZ supports a print ratio of 2.0:1 to 3.0:1.",
       "    •   Field data (^FD) is limited to the width (or length, if rotated) of the label."
@@ -1248,7 +1239,7 @@
       "^CFf,h,w"
     ],
     "description": [
-      "Description The ^CF command sets the default font used in your printer. You can use the",
+      "The ^CF command sets the default font used in your printer. You can use the",
       "^CF command to simplify your programs."
     ],
     "parameters": [
@@ -1269,7 +1260,7 @@
       "^CIa,s1,d1,s2,d2,..."
     ],
     "description": [
-      "Description Zebra printers can print fonts using international character sets: U.S.A.1,",
+      "Zebra printers can print fonts using international character sets: U.S.A.1,",
       "U.S.A.2, UK, Holland, Denmark/Norway, Sweden/Finland, Germany, France 1, France 2,",
       "Italy, Spain, and several other sets, .."
     ],
@@ -1325,7 +1316,7 @@
       "^CMa,b,c,d"
     ],
     "description": [
-      "Description The ^CM command allows you to reassign a letter designation to the printer’s",
+      "The ^CM command allows you to reassign a letter designation to the printer’s",
       "memory devices. If a format already exists, you can reassign the memory device to the",
       "corresponding letter without forcing, altering, or recreating the format itself."
     ],
@@ -1378,7 +1369,7 @@
       "^CVa"
     ],
     "description": [
-      "Description The ^CV command acts as a switch to turn the code validation function on and",
+      "The ^CV command acts as a switch to turn the code validation function on and",
       "off. When this command is turned on, all bar code data is checked for these error conditions:",
       " • character not in character set",
       " • check-digit incorrect",
@@ -1400,7 +1391,7 @@
       "^CWa,d:o.x"
     ],
     "description": [
-      "Description All built-in fonts are referenced using a one-character identifier. The ^CW",
+      "All built-in fonts are referenced using a one-character identifier. The ^CW",
       "command assigns a single alphanumeric character to a font stored in DRAM, memory card,",
       "EPROM, or Flash."
     ],
@@ -1430,7 +1421,7 @@
       "~DBd:o.x,a,h,w,base,space,#char,©,data"
     ],
     "description": [
-      "Description The ~DB command sets the printer to receive a downloaded bitmap font and",
+      "The ~DB command sets the printer to receive a downloaded bitmap font and",
       "defines native cell size, baseline, space size, and copyright."
     ],
     "parameters": [
@@ -1481,7 +1472,7 @@
       "~DEd:o.x,s,data"
     ],
     "description": [
-      "Description The standard encoding for TrueType Windows® fonts is always Unicode. The",
+      "The standard encoding for TrueType Windows® fonts is always Unicode. The",
       "ZPL II field data must be converted from some other encoding to Unicode that the Zebra",
       "printer understands. The required translation tables are provided with font packs. Some tables",
       "can be downloaded from www.zebra.com."
@@ -1507,7 +1498,7 @@
       "^DFd:o.x"
     ],
     "description": [
-      "Description The ^DF command saves ZPL II format commands as text strings to be later",
+      "The ^DF command saves ZPL II format commands as text strings to be later",
       "merged using ^XF with variable data. The format to be stored might contain field number",
       "(^FN) commands to be referenced when recalled."
     ],
@@ -1526,7 +1517,7 @@
       "~DGd:o.x,t,w,data"
     ],
     "description": [
-      "Description The ~DG command downloads an ASCII Hex representation of a graphic",
+      "The ~DG command downloads an ASCII Hex representation of a graphic",
       "image. If .GRF is not the specified file extension, .GRF is automatically appended."
     ],
     "parameters": [
@@ -1552,7 +1543,7 @@
       "~DN"
     ],
     "description": [
-      "Description After decoding and printing the number of bytes in parameter t of the ~DG",
+      "After decoding and printing the number of bytes in parameter t of the ~DG",
       "command, the printer returns to normal Print Mode. Graphics Mode can be aborted and normal",
       "printer operation resumed by using the ~DN command."
     ],
@@ -1565,7 +1556,7 @@
       "~DSd:o.x,s,data"
     ],
     "description": [
-      "Description The ~DS command is used to set the printer to receive a downloadable scalable",
+      "The ~DS command is used to set the printer to receive a downloadable scalable",
       "font and defines the size of the font in bytes."
     ],
     "parameters": [
@@ -1589,7 +1580,7 @@
       "~DTd:o.x,s,data"
     ],
     "description": [
-      "Description Use ZTools to convert a TrueType font to a Zebra-downloadable format.",
+      "Use ZTools to convert a TrueType font to a Zebra-downloadable format.",
       "ZTools creates a downloadable file that includes a ~DT command. For information on",
       "converting and downloading Intellifont information, see ~DS on page 131."
     ],
@@ -1616,7 +1607,7 @@
       "~DUd:o.x,s,data"
     ],
     "description": [
-      "Description Some international fonts, such as Asian fonts, have more than",
+      "Some international fonts, such as Asian fonts, have more than",
       "256 printable characters. These fonts are supported as large TrueType fonts and are",
       "downloaded to the printer with the ~DU command. Use ZTools to convert the large TrueType",
       "fonts to a Zebra-downloadable format."
@@ -1643,7 +1634,7 @@
       "~DYd:f,b,x,t,w,data"
     ],
     "description": [
-      "Description The ~DY command downloads to the printer graphic objects or fonts in any",
+      "The ~DY command downloads to the printer graphic objects or fonts in any",
       "supported format. This command can be used in place of ~DG for more saving and loading",
       "options. ~DY is the preferred command to download TrueType fonts on printers with firmware",
       "greater than X.13. It is faster than ~DU."
@@ -1700,7 +1691,7 @@
       "^FBa,b,c,d,e"
     ],
     "description": [
-      "Description The ^FB command allows you to print text into a defined block type format.",
+      "The ^FB command allows you to print text into a defined block type format.",
       "This command formats an ^FD or ^SN string into a block of text using the origin, font, and",
       "rotation specified for the text string. The ^FB command also contains an automatic word-wrap",
       "function."
@@ -1740,7 +1731,7 @@
       "^FCa,b,c"
     ],
     "description": [
-      "Description The ^FC command is used to set the clock-indicators (delimiters) and the clock",
+      "The ^FC command is used to set the clock-indicators (delimiters) and the clock",
       "mode for use with the Real-Time Clock hardware. This command must be included within",
       "each label field command string each time the Real-Time Clock values are required within the",
       "field."
@@ -1764,7 +1755,7 @@
       "^FDa"
     ],
     "description": [
-      "Description The ^FD command defines the data string for the field. The field data can be",
+      "The ^FD command defines the data string for the field. The field data can be",
       "any printable character except those used as command prefixes (^ and ~)."
     ],
     "parameters": [
@@ -1779,7 +1770,7 @@
       "^FHa"
     ],
     "description": [
-      "Description The ^FH command allows you to enter the hexadecimal value for any",
+      "The ^FH command allows you to enter the hexadecimal value for any",
       "character directly into the ^FD statement. The ^FH command must precede each ^FD",
       "command that uses hexadecimals in its field."
     ],
@@ -1796,7 +1787,7 @@
       "^FMx1,y1,x2,y2,..."
     ],
     "description": [
-      "Description The ^FM command allows you to control the placement of bar code symbols."
+      "The ^FM command allows you to control the placement of bar code symbols."
     ],
     "parameters": [
       "x1 = x-axis location       Accepted Values:",
@@ -1826,7 +1817,7 @@
       "^FN#"
     ],
     "description": [
-      "Description The ^FN command numbers the data fields. This command is used in both",
+      "The ^FN command numbers the data fields. This command is used in both",
       "^DF (Store Format) and ^XF (Recall Format) commands."
     ],
     "parameters": [
@@ -1842,7 +1833,7 @@
       "^FOx,y"
     ],
     "description": [
-      "Description The ^FO command sets a field origin, relative to the label home (^LH)",
+      "The ^FO command sets a field origin, relative to the label home (^LH)",
       "position. ^FO sets the upper-left corner of the field area by defining points along the",
       "x-axis and y-axis independent of the rotation."
     ],
@@ -1860,7 +1851,7 @@
       "^FPd,g"
     ],
     "description": [
-      "Description The ^FP command allows vertical and reverse formatting of the font field,",
+      "The ^FP command allows vertical and reverse formatting of the font field,",
       "commonly used for printing Asian fonts."
     ],
     "parameters": [
@@ -1881,7 +1872,7 @@
       "^FR"
     ],
     "description": [
-      "Description The ^FR command allows a field to appear as white over black or black over",
+      "The ^FR command allows a field to appear as white over black or black over",
       "white. When printing a field and the ^FR command has been used, the color of the output is",
       "the reverse of its background."
     ],
@@ -1894,7 +1885,7 @@
       "^FS"
     ],
     "description": [
-      "Description The ^FS command denotes the end of the field definition. Alternatively, ^FS",
+      "The ^FS command denotes the end of the field definition. Alternatively, ^FS",
       "command can also be issued as a single ASCII control code SI (Control-O, hexadecimal 0F)."
     ],
     "parameters": []
@@ -1906,7 +1897,7 @@
       "^FTx,y"
     ],
     "description": [
-      "Description The ^FT command sets the field position, relative to the home position of the",
+      "The ^FT command sets the field position, relative to the home position of the",
       "label designated by the ^LH command. The typesetting origin of the field is fixed with respect",
       "to the contents of the field and does not change with rotation."
     ],
@@ -1924,7 +1915,7 @@
       "^FVa"
     ],
     "description": [
-      "Description ^FV replaces the ^FD (field data) command in a label format when the field is",
+      "^FV replaces the ^FD (field data) command in a label format when the field is",
       "variable."
     ],
     "parameters": [
@@ -1939,7 +1930,7 @@
       "^FWr"
     ],
     "description": [
-      "Description The ^FW command sets the default orientation for all command fields that have",
+      "The ^FW command sets the default orientation for all command fields that have",
       "an orientation (rotation) parameter. Fields can be rotated 0, 90, 180, or 270 degrees clockwise",
       "by using this command."
     ],
@@ -1959,7 +1950,7 @@
       "^FXc"
     ],
     "description": [
-      "Description The ^FX command is useful when you want to add non-printing informational",
+      "The ^FX command is useful when you want to add non-printing informational",
       "comments or statements within a label format. Any data after the ^FX command up to the next",
       "caret (^) or tilde (~) command does not have any effect on the label format. Therefore, you",
       "should avoid using the caret (^) or tilde (~) commands within the ^FX statement."
@@ -1976,7 +1967,7 @@
       "^GBw,h,t,c,r"
     ],
     "description": [
-      "Description The ^GB command is used to draw boxes and lines as part of a label format.",
+      "The ^GB command is used to draw boxes and lines as part of a label format.",
       "Boxes and lines are used to highlight important information, divide labels into distinct areas,",
       "or to improve the appearance of a label. The same format command is used for drawing either",
       "boxes or lines."
@@ -2003,7 +1994,7 @@
       "^GCd,t,c"
     ],
     "description": [
-      "Description The ^GC command produces a circle on the printed label. The command",
+      "The ^GC command produces a circle on the printed label. The command",
       "parameters specify the diameter (width) of the circle, outline thickness, and color. Thickness",
       "extends inward from the outline."
     ],
@@ -2026,7 +2017,7 @@
       "^GDw,h,t,c,o"
     ],
     "description": [
-      "Description The ^GD command produces a straight diagonal line on a label. This can be",
+      "The ^GD command produces a straight diagonal line on a label. This can be",
       "used in conjunction with other graphic commands to create a more complex figure."
     ],
     "parameters": [
@@ -2053,7 +2044,7 @@
       "^GEw,h,t,c"
     ],
     "description": [
-      "Description The ^GE command produces an ellipse in the label format."
+      "The ^GE command produces an ellipse in the label format."
     ],
     "parameters": [
       "w = ellipse width (in      Accepted Values: 3 to 4095 (larger values are replaced with 4095)",
@@ -2075,7 +2066,7 @@
       "^GFa,b,c,d,data"
     ],
     "description": [
-      "Description The ^GF command allows you to download graphic field data directly into the",
+      "The ^GF command allows you to download graphic field data directly into the",
       "printer’s bitmap storage area. This command follows the conventions for any other field,",
       "meaning a field orientation is included. The graphic field data can be placed at any location",
       "within the bitmap space."
@@ -2129,7 +2120,7 @@
       "^GSo,h,w"
     ],
     "description": [
-      "Description The ^GS command enables you to generate the registered trademark, copyright",
+      "The ^GS command enables you to generate the registered trademark, copyright",
       "symbol, and other symbols."
     ],
     "parameters": [
@@ -2154,7 +2145,7 @@
       "~HB"
     ],
     "description": [
-      "Description When the ~HB command is sent to the printer, a data string is sent back to the",
+      "When the ~HB command is sent to the printer, a data string is sent back to the",
       "host. The string starts with an <STX> control code sequence and terminates by an",
       "<ETX><CR><LF> control code sequence."
     ],
@@ -2167,7 +2158,7 @@
       "~HD"
     ],
     "description": [
-      "Description The ~HD command echoes printer status information that includes the power",
+      "The ~HD command echoes printer status information that includes the power",
       "supply and head temperature using the terminal emulator."
     ],
     "parameters": []
@@ -2179,7 +2170,7 @@
       "^HFd,o,x"
     ],
     "description": [
-      "Description The ^HF command sends stored formats to the host."
+      "The ^HF command sends stored formats to the host."
     ],
     "parameters": [
       "d = device to recall       Accepted Values: R:, E:, B:, and A:",
@@ -2196,7 +2187,7 @@
       "^HGd:o.x"
     ],
     "description": [
-      "Description The ^HG command is used to upload graphics to the host. The graphic image",
+      "The ^HG command is used to upload graphics to the host. The graphic image",
       "can be stored for future use, or it can be downloaded to any Zebra printer."
     ],
     "parameters": [
@@ -2214,7 +2205,7 @@
       "^HH"
     ],
     "description": [
-      "Description The ^HH command echoes printer configuration back to the host, using a",
+      "The ^HH command echoes printer configuration back to the host, using a",
       "terminal emulator."
     ],
     "parameters": []
@@ -2226,7 +2217,7 @@
       "~HI"
     ],
     "description": [
-      "Description The ~HI command is designed to be sent from the host to the Zebra printer to",
+      "The ~HI command is designed to be sent from the host to the Zebra printer to",
       "retrieve information. Upon receipt, the printer responds with information on the model,",
       "software version, dots-per-millimeter setting, memory size, and any detected objects."
     ],
@@ -2239,7 +2230,7 @@
       "~HM"
     ],
     "description": [
-      "Description Sending ~HM to the printer immediately returns a memory status message to",
+      "Sending ~HM to the printer immediately returns a memory status message to",
       "the host. Use this command whenever you need to know the printer’s RAM status."
     ],
     "parameters": []
@@ -2249,7 +2240,7 @@
     "definition": "Host Status Return",
     "format": [],
     "description": [
-      "Description When the host sends ~HS to the printer, the printer sends three data strings",
+      "When the host sends ~HS to the printer, the printer sends three data strings",
       "back. Each string starts with an <STX> control code and is terminated by an",
       "<ETX><CR><LF> control code sequence. To avoid confusion, the host prints each string on a",
       "separate line."
@@ -2263,7 +2254,7 @@
       "~HU"
     ],
     "description": [
-      "Description This command returns the table of configured ZebraNet Alert settings to the",
+      "This command returns the table of configured ZebraNet Alert settings to the",
       "host."
     ],
     "parameters": []
@@ -2275,7 +2266,7 @@
       "^HV#,n,h"
     ],
     "description": [
-      "Description This command is used to return data from specified fields, along with an",
+      "This command is used to return data from specified fields, along with an",
       "optional ASCII header, to the host computer. The command can be used with any field that has",
       "been assigned a number with the ^RT command or the ^FN and ^RF commands."
     ],
@@ -2298,7 +2289,7 @@
       "^HWd:o.x"
     ],
     "description": [
-      "Description ^HW is used to transmit a directory listing of objects in a specific memory area",
+      "^HW is used to transmit a directory listing of objects in a specific memory area",
       "(storage device) back to the host device. This command returns a formatted ASCII string of",
       "object names to the host."
     ],
@@ -2319,7 +2310,7 @@
       "^HYd:o.x"
     ],
     "description": [
-      "Description The ^HY command is an extension of the ^HG command. ^HY is used to",
+      "The ^HY command is an extension of the ^HG command. ^HY is used to",
       "upload graphic objects from the printer in any supported format."
     ],
     "parameters": [
@@ -2341,7 +2332,7 @@
       "^HZO,d:o.x,l"
     ],
     "description": [
-      "Description The ^HZ command is used for returning printer description information in",
+      "The ^HZ command is used for returning printer description information in",
       "XML format. The printer returns information on format parameters, object directories,",
       "individual object data, and print status information."
     ],
@@ -2386,7 +2377,7 @@
       "^IDd:o.x"
     ],
     "description": [
-      "Description The ^ID command deletes objects, graphics, fonts, and stored formats from",
+      "The ^ID command deletes objects, graphics, fonts, and stored formats from",
       "storage areas. Objects can be deleted selectively or in groups. This command can be used",
       "within a printing format to delete objects before saving new ones, or in a stand-alone format to",
       "delete objects."
@@ -2407,7 +2398,7 @@
       "^ILd:o.x"
     ],
     "description": [
-      "Description The ^IL command is used at the beginning of a label format to load a stored",
+      "The ^IL command is used at the beginning of a label format to load a stored",
       "image of a format and merge it with additional data. The image is always positioned at",
       "^FO0,0."
     ],
@@ -2426,7 +2417,7 @@
       "^IMd:o.x"
     ],
     "description": [
-      "Description The ^IM command performs a direct move of an image from storage area into",
+      "The ^IM command performs a direct move of an image from storage area into",
       "the bitmap. The command is identical to the ^XG command (Recall Graphic), except there are",
       "no sizing parameters."
     ],
@@ -2445,7 +2436,7 @@
       "^ISd:o.x,p"
     ],
     "description": [
-      "Description The ^IS command is used within a label format to save that format as a",
+      "The ^IS command is used within a label format to save that format as a",
       "graphic image, rather than as a ZPL II script. It is typically used toward the end of a script. The",
       "saved image can later be recalled with virtually no formatting time and overlaid with variable",
       "data to form a complete label."
@@ -2470,7 +2461,7 @@
       "~JA"
     ],
     "description": [
-      "Description The ~JA command cancels all format commands in the buffer. It also cancels",
+      "The ~JA command cancels all format commands in the buffer. It also cancels",
       "any batches that are printing."
     ],
     "parameters": []
@@ -2482,7 +2473,7 @@
       "^JBa"
     ],
     "description": [
-      "Description The ^JB command is used to initialize various types of Flash memory",
+      "The ^JB command is used to initialize various types of Flash memory",
       "available in the Zebra printers."
     ],
     "parameters": [
@@ -2500,7 +2491,7 @@
       "~JB"
     ],
     "description": [
-      "Description The ~JB command is used for these conditions:",
+      "The ~JB command is used for these conditions:",
       " • The ~JB command must be sent to the printer if the battery supplying power to the battery",
       "   powered memory card fails and is replaced. A bad battery shows a battery dead condition",
       "   on the Printer Configuration Label.",
@@ -2516,7 +2507,7 @@
       "~JC"
     ],
     "description": [
-      "Description The ~JC command is used to force a label length measurement and adjust the",
+      "The ~JC command is used to force a label length measurement and adjust the",
       "media and ribbon sensor values."
     ],
     "parameters": []
@@ -2528,7 +2519,7 @@
       "~JD"
     ],
     "description": [
-      "Description The ~JD command initiates Diagnostic Mode, which produces an ASCII",
+      "The ~JD command initiates Diagnostic Mode, which produces an ASCII",
       "printout (using current label length and full width of printer) of all characters received by the",
       "printer. This printout includes the ASCII characters, the hexadecimal value, and any",
       "communication errors."
@@ -2542,7 +2533,7 @@
       "~JE"
     ],
     "description": [
-      "Description The ~JE command cancels Diagnostic Mode and returns the printer to normal",
+      "The ~JE command cancels Diagnostic Mode and returns the printer to normal",
       "label printing."
     ],
     "parameters": []
@@ -2554,7 +2545,7 @@
       "~JFp"
     ],
     "description": [
-      "Description There are two low battery voltage levels sensed by the PA/PT400™ printers.",
+      "There are two low battery voltage levels sensed by the PA/PT400™ printers.",
       "When battery voltage goes below the first level, the green LED begins flashing as a warning",
       "but printing continues. When this warning occurs, it is recommended to recharge the battery."
     ],
@@ -2572,7 +2563,7 @@
       "~JG"
     ],
     "description": [
-      "Description The ~JG command is used to force a label length measurement, recalibrate the",
+      "The ~JG command is used to force a label length measurement, recalibrate the",
       "media and ribbon sensors, and print a graph (media sensor profile) of the sensor values."
     ],
     "parameters": []
@@ -2584,7 +2575,7 @@
       "^JJa,b,c,d,e,f"
     ],
     "description": [
-      "Description The ^JJ command allows you to control an online verifier or applicator",
+      "The ^JJ command allows you to control an online verifier or applicator",
       "device."
     ],
     "parameters": [
@@ -2650,7 +2641,7 @@
       "~JL"
     ],
     "description": [
-      "Description The ~JL command is used to set the label length. Depending on the size of the",
+      "The ~JL command is used to set the label length. Depending on the size of the",
       "label, the printer feeds one or more blank labels."
     ],
     "parameters": []
@@ -2662,7 +2653,7 @@
       "^JMn"
     ],
     "description": [
-      "Description The ^JM command lowers the density of the print—24 dots/mm becomes 12,",
+      "The ^JM command lowers the density of the print—24 dots/mm becomes 12,",
       "12 dots/mm becomes 6, 8 dots/mm becomes 4, and 6 dots/mm becomes 3. ^JM also affects the",
       "field origin (^FO) placement on the label (see example below)."
     ],
@@ -2680,7 +2671,7 @@
       "~JN"
     ],
     "description": [
-      "Description The ~JN command turns on the head test option. When activated, ~JN causes",
+      "The ~JN command turns on the head test option. When activated, ~JN causes",
       "the printer to halt when a head test failure is encountered."
     ],
     "parameters": []
@@ -2692,7 +2683,7 @@
       "~JO"
     ],
     "description": [
-      "Description The ~JO command turns off the head test option. ~JO is the default printhead",
+      "The ~JO command turns off the head test option. ~JO is the default printhead",
       "test condition and overrides a failure of printhead element status check. This state is changed",
       "when the printer receives a ~JN (Head Test Fatal) command. The printhead test does not",
       "produce an error when ~JO is active."
@@ -2706,7 +2697,7 @@
       "~JP"
     ],
     "description": [
-      "Description The ~JP command clears the format currently being processed and places the",
+      "The ~JP command clears the format currently being processed and places the",
       "printer into Pause Mode."
     ],
     "parameters": []
@@ -2718,7 +2709,7 @@
       "~JR"
     ],
     "description": [
-      "Description The ~JR command resets all of the printer’s internal software, performs a",
+      "The ~JR command resets all of the printer’s internal software, performs a",
       "power-on self-test (POST), clears the buffer and DRAM, and resets communication",
       "parameters and default values. Issuing a ~JR command performs the same function as a",
       "manual power-on reset."
@@ -2747,7 +2738,7 @@
       "~JSb"
     ],
     "description": [
-      "Description The ~JS command is used to control the backfeed sequence. This command",
+      "The ~JS command is used to control the backfeed sequence. This command",
       "can be used on printers with or without built-in cutters."
     ],
     "parameters": [
@@ -2771,7 +2762,7 @@
       "^JT####,a,b,c"
     ],
     "description": [
-      "Description The ^JT command allows you to change the printhead test interval from every",
+      "The ^JT command allows you to change the printhead test interval from every",
       "100 labels to any desired interval. With the ^JT command, the printer is allowed to run the",
       "test after printing a label. When a parameter is defined, the printer runs the test after printing a",
       "set amount of labels."
@@ -2801,7 +2792,7 @@
       "^JUa"
     ],
     "description": [
-      "Description The ^JU command sets the active configuration for the printer."
+      "The ^JU command sets the active configuration for the printer."
     ],
     "parameters": [
       "a = active                 Accepted Values:",
@@ -2820,7 +2811,7 @@
       "^JWt"
     ],
     "description": [
-      "Description ^JW sets the ribbon tension for the printer it is sent to."
+      "^JW sets the ribbon tension for the printer it is sent to."
     ],
     "parameters": [
       "t = tension               Accepted Values:",
@@ -2837,7 +2828,7 @@
       "~JX"
     ],
     "description": [
-      "Description The ~JX command cancels a format currently being sent to the printer. It does",
+      "The ~JX command cancels a format currently being sent to the printer. It does",
       "not affect any formats currently being printed, or any subsequent formats that might be sent."
     ],
     "parameters": []
@@ -2849,7 +2840,7 @@
       "^JZa"
     ],
     "description": [
-      "Description The ^JZ command reprints a partially printed label caused by a Ribbon",
+      "The ^JZ command reprints a partially printed label caused by a Ribbon",
       "Out, Media Out, or Head Open error condition. The label is reprinted as soon as the",
       "error condition is corrected."
     ],
@@ -2867,7 +2858,7 @@
       "~KB"
     ],
     "description": [
-      "Description To maintain performance of the rechargeable battery in the portable printers,",
+      "To maintain performance of the rechargeable battery in the portable printers,",
       "the battery must be fully discharged and recharged regularly. The ~KB command places the",
       "printer in battery discharge mode. This allows the battery to be drained without actually",
       "printing."
@@ -2881,7 +2872,7 @@
       "^KDa"
     ],
     "description": [
-      "Description The ^KD command selects the format that the Real-Time Clock’s date and time",
+      "The ^KD command selects the format that the Real-Time Clock’s date and time",
       "information presents as on a configuration label. This is also displayed on the Printer Idle",
       "LCD control panel display, and displayed while setting the date and time."
     ],
@@ -2902,7 +2893,7 @@
       "^KLa"
     ],
     "description": [
-      "Description The ^KL command selects the language displayed on the control panel."
+      "The ^KL command selects the language displayed on the control panel."
     ],
     "parameters": [
       "a = language               Accepted Values:",
@@ -2929,7 +2920,7 @@
       "^KNa,b"
     ],
     "description": [
-      "Description The printer’s network name and description can be set using the ^KN",
+      "The printer’s network name and description can be set using the ^KN",
       "command. ^KN is designed to make your Zebra printer easy for users to identify. The name the",
       "administrator designates is listed on the configuration label and on the Web page generated by",
       "the printer."
@@ -2952,7 +2943,7 @@
       "^KPa,b"
     ],
     "description": [
-      "Description The ^KP command is used to define the password that must be entered to",
+      "The ^KP command is used to define the password that must be entered to",
       "access the control panel switches and LCD Setup Mode."
     ],
     "parameters": [
@@ -2969,7 +2960,7 @@
       "^LHx,y"
     ],
     "description": [
-      "Description The ^LH command sets the label home position."
+      "The ^LH command sets the label home position."
     ],
     "parameters": [
       "x = x-axis position        Accepted Values: 0 to 32000",
@@ -2985,7 +2976,7 @@
       "^LLy"
     ],
     "description": [
-      "Description The ^LL command defines the length of the label. This command is necessary",
+      "The ^LL command defines the length of the label. This command is necessary",
       "when using continuous media (media not divided into separate labels by gaps, spaces, notches,",
       "slots, or holes)."
     ],
@@ -3006,7 +2997,7 @@
       "^LRa"
     ],
     "description": [
-      "Description The ^LR command reverses the printing of all fields in the label format. It",
+      "The ^LR command reverses the printing of all fields in the label format. It",
       "allows a field to appear as white over black or black over white."
     ],
     "parameters": [
@@ -3023,7 +3014,7 @@
       "^LSa"
     ],
     "description": [
-      "Description The ^LS command allows for compatibility with Z-130 printer formats that are",
+      "The ^LS command allows for compatibility with Z-130 printer formats that are",
       "set for less than full label width. It is used to shift all field positions to the left so the same",
       "commands used on a Z-130 or Z-220 Printer can be used on other Zebra printers."
     ],
@@ -3039,7 +3030,7 @@
       "^LTx"
     ],
     "description": [
-      "Description The ^LT command moves the entire label format a maximum of",
+      "The ^LT command moves the entire label format a maximum of",
       "120 dot rows up or down from its current position, in relation to the top edge of the label. A",
       "negative value moves the format towards the top of the label; a positive value moves the",
       "format away from the top of the label."
@@ -3057,7 +3048,7 @@
       "^MCa"
     ],
     "description": [
-      "Description In normal operation, the bitmap is cleared after the format has been printed.",
+      "In normal operation, the bitmap is cleared after the format has been printed.",
       "The ^MC command is used to retain the current bitmap. This applies to current and subsequent",
       "labels until cleared with ^MCY."
     ],
@@ -3073,7 +3064,7 @@
       "^MDa"
     ],
     "description": [
-      "Description The ^MD command adjusts the darkness relative to the current darkness setting."
+      "The ^MD command adjusts the darkness relative to the current darkness setting."
     ],
     "parameters": [
       "a = media darkness        Accepted Values: -30 to 30, depending on current value",
@@ -3088,7 +3079,7 @@
       "^MFp,h"
     ],
     "description": [
-      "Description The ^MF command dictates what happens to the media at power-up and at",
+      "The ^MF command dictates what happens to the media at power-up and at",
       "head-close after the error clears."
     ],
     "parameters": [
@@ -3113,7 +3104,7 @@
       "^MLa"
     ],
     "description": [
-      "Description The ^ML command lets you adjust the maximum label length."
+      "The ^ML command lets you adjust the maximum label length."
     ],
     "parameters": [
       "a = maximum label         Accepted Values: 0 to maximum length of label",
@@ -3128,7 +3119,7 @@
       "^MMa,b"
     ],
     "description": [
-      "Description The ^MM command determines the action the printer takes after a label or",
+      "The ^MM command determines the action the printer takes after a label or",
       "group of labels has printed."
     ],
     "parameters": [
@@ -3157,7 +3148,7 @@
       "^MNa"
     ],
     "description": [
-      "Description The ^MN command relays to the printer what type of media is being used",
+      "The ^MN command relays to the printer what type of media is being used",
       "(continuous or non-continuous) for purposes of tracking. This bulleted list shows the types of",
       "media associated with this command:",
       " • Continuous Media – this media has no physical characteristic (web, notch, perforation,",
@@ -3181,7 +3172,7 @@
       "^MPa"
     ],
     "description": [
-      "Description The ^MP command is used to disable the various mode functions on the control",
+      "The ^MP command is used to disable the various mode functions on the control",
       "panel. Once disabled, the settings for the particular mode function can no longer be changed",
       "and the LED associated with the function does not light."
     ],
@@ -3207,7 +3198,7 @@
       "^MTa"
     ],
     "description": [
-      "Description The ^MT command selects the type of media being used in the printer. There",
+      "The ^MT command selects the type of media being used in the printer. There",
       "are two choices for this command:",
       "    •   Thermal Transfer Media – this media uses a high-carbon black or colored ribbon. The",
       "        ink on the ribbon is bonded to the media.",
@@ -3227,7 +3218,7 @@
       "^MUa,b,c"
     ],
     "description": [
-      "Description The ^MU command sets the units of measurement the printer uses. ^MU works",
+      "The ^MU command sets the units of measurement the printer uses. ^MU works",
       "on a field-by-field basis. Once the mode of units is set, it carries over from field to field until a",
       "new mode of units is entered."
     ],
@@ -3250,7 +3241,7 @@
       "^MWy"
     ],
     "description": [
-      "Description The ^MW command allows you to set the head cold warning indicator based on",
+      "The ^MW command allows you to set the head cold warning indicator based on",
       "the operating environment."
     ],
     "parameters": [
@@ -3266,7 +3257,7 @@
       "~NC###"
     ],
     "description": [
-      "Description The ~NC command is used to connect a particular printer to a network by",
+      "The ~NC command is used to connect a particular printer to a network by",
       "calling up the printer’s network ID number."
     ],
     "parameters": [
@@ -3283,7 +3274,7 @@
       "^NI###"
     ],
     "description": [
-      "Description The ^NI command is used to assign a network ID number to the printer. This",
+      "The ^NI command is used to assign a network ID number to the printer. This",
       "must be done before the printer can be used in a network."
     ],
     "parameters": [
@@ -3300,7 +3291,7 @@
       "~NR"
     ],
     "description": [
-      "Description The ~NR command sets all printers in the network to be transparent, regardless",
+      "The ~NR command sets all printers in the network to be transparent, regardless",
       "of ID or current mode."
     ],
     "parameters": []
@@ -3312,7 +3303,7 @@
       "^NSa,b,c,d"
     ],
     "description": [
-      "Description The ^NS command is used to change Ethernet network settings."
+      "The ^NS command is used to change Ethernet network settings."
     ],
     "parameters": [
       "a = network setting       Accepted Values:",
@@ -3336,7 +3327,7 @@
       "~NT"
     ],
     "description": [
-      "Description The ~NT command sets the currently connected network printer to be",
+      "The ~NT command sets the currently connected network printer to be",
       "transparent."
     ],
     "parameters": []
@@ -3348,7 +3339,7 @@
       "^PF#"
     ],
     "description": [
-      "Description The ^PF command causes the printer to slew labels (move labels at a high",
+      "The ^PF command causes the printer to slew labels (move labels at a high",
       "speed without printing) a specified number of dot rows from the bottom of the label. This",
       "allows faster printing when the bottom portion of a label is blank."
     ],
@@ -3364,7 +3355,7 @@
       "^PMa"
     ],
     "description": [
-      "Description The ^PM command prints the entire printable area of the label as a mirror",
+      "The ^PM command prints the entire printable area of the label as a mirror",
       "image. This command flips the image from left to right."
     ],
     "parameters": [
@@ -3381,7 +3372,7 @@
       "^POa"
     ],
     "description": [
-      "Description The ^PO command inverts the label format 180 degrees. The label appears to",
+      "The ^PO command inverts the label format 180 degrees. The label appears to",
       "be printed upside down. If the original label contains commands such as ^LL, ^LS, ^LT and",
       "^PF, the inverted label output is affected differently."
     ],
@@ -3397,7 +3388,7 @@
       "^PQq,p,r,o"
     ],
     "description": [
-      "Description The ^PQ command gives control over several printing operations. It controls",
+      "The ^PQ command gives control over several printing operations. It controls",
       "the number of labels to print, the number of labels printed before printer pauses, and the",
       "number of replications of each serial number."
     ],
@@ -3422,7 +3413,7 @@
       "^PRp,s,b"
     ],
     "description": [
-      "Description The ^PR command determines the media and slew speed (feeding a blank",
+      "The ^PR command determines the media and slew speed (feeding a blank",
       "label) during printing."
     ],
     "parameters": [
@@ -3471,7 +3462,7 @@
       "~PR"
     ],
     "description": [
-      "Description The ~PR command is supported only by the PAX and PAX2-Series printers. If",
+      "The ~PR command is supported only by the PAX and PAX2-Series printers. If",
       "the ~PR command is enabled (see ^JJ on page 196), the last label printed reprint, similar to the",
       "applicator asserting the Reprint signal on the applicator port."
     ],
@@ -3484,7 +3475,7 @@
       "~PS"
     ],
     "description": [
-      "Description The ~PS command causes a printer in Pause Mode to resume printing. The",
+      "The ~PS command causes a printer in Pause Mode to resume printing. The",
       "operation is identical to pressing PAUSE on the control panel of the printer when the printer is",
       "already in Pause Mode."
     ],
@@ -3497,7 +3488,7 @@
       "^PWa"
     ],
     "description": [
-      "Description The ^PW command allows you set the print width."
+      "The ^PW command allows you set the print width."
     ],
     "parameters": [
       "a = label width (in       Accepted Values: 2, to the width of the label",
@@ -3513,7 +3504,7 @@
       "~ROc"
     ],
     "description": [
-      "Description The ~RO command resets the advanced counters used by the printer to monitor",
+      "The ~RO command resets the advanced counters used by the printer to monitor",
       "label generation in inches, centimeters, and number of labels. Two resettable counters are",
       "available and can be reset."
     ],
@@ -3530,7 +3521,7 @@
       "^SCa,b,c,d,e,f"
     ],
     "description": [
-      "Description The ^SC command allows you to change the serial communications",
+      "The ^SC command allows you to change the serial communications",
       "parameters you are using."
     ],
     "parameters": [
@@ -3562,7 +3553,7 @@
       "~SD##"
     ],
     "description": [
-      "Description The ~SD command allows you to set the darkness of printing. ~SD is the",
+      "The ~SD command allows you to set the darkness of printing. ~SD is the",
       "equivalent of the darkness setting parameter on the control panel display."
     ],
     "parameters": [
@@ -3579,7 +3570,7 @@
       "^SEd:o.x"
     ],
     "description": [
-      "Description The ^SE command is used to select the desired ZPL or ZPL II encoding table."
+      "The ^SE command is used to select the desired ZPL or ZPL II encoding table."
     ],
     "parameters": [
       "d = location of           Accepted Values: R:, E:, B:, and A:",
@@ -3596,7 +3587,7 @@
       "^SFa,b"
     ],
     "description": [
-      "Description The ^SF command allows you to serialize a standard ^FD string. The",
+      "The ^SF command allows you to serialize a standard ^FD string. The",
       "maximum size of the mask and increment string is 3K combined."
     ],
     "parameters": [
@@ -3629,7 +3620,7 @@
       "^SLa,b"
     ],
     "description": [
-      "Description The ^SL command is used to specify the Real-Time Clock’s mode of operation",
+      "The ^SL command is used to specify the Real-Time Clock’s mode of operation",
       "and language for printing information."
     ],
     "parameters": [
@@ -3673,7 +3664,7 @@
       "^SNv,n,z"
     ],
     "description": [
-      "Description The ^SN command allows the printer to index data fields by a selected",
+      "The ^SN command allows the printer to index data fields by a selected",
       "increment or decrement value, making the data fields increase or decrease by a specified value",
       "each time a label is printed. This can be performed on 100 to 150 fields in a given format and",
       "can be performed on both alphanumeric and bar code fields. A maximum of 12 of the right-",
@@ -3700,7 +3691,7 @@
       "^SOa,b,c,d,e,f,g"
     ],
     "description": [
-      "Description The ^SO command is used to set the secondary and the tertiary offset from the",
+      "The ^SO command is used to set the secondary and the tertiary offset from the",
       "primary Real-Time Clock."
     ],
     "parameters": [
@@ -3729,7 +3720,7 @@
       "^SPa"
     ],
     "description": [
-      "Description The ^SP command allows a label to start printing at a specified point before",
+      "The ^SP command allows a label to start printing at a specified point before",
       "the entire label has been completely formatted. On extremely complex labels, this command",
       "can increase the overall throughput of the print."
     ],
@@ -3745,7 +3736,7 @@
       "^SQa,b,c"
     ],
     "description": [
-      "Description The ^SQ command is used to stop the ZebraNet Alert option."
+      "The ^SQ command is used to stop the ZebraNet Alert option."
     ],
     "parameters": [
       "a = condition type         Accepted Values:",
@@ -3794,7 +3785,7 @@
       "^SR####"
     ],
     "description": [
-      "Description The ^SR command allows you to set the printhead resistance."
+      "The ^SR command allows you to set the printhead resistance."
     ],
     "parameters": [
       "#### = resistance          Accepted Value: 0488 to 1175",
@@ -3809,7 +3800,7 @@
       "^SSw,m,r,l,m2,r2,a,b,c"
     ],
     "description": [
-      "Description The ^SS command is used to change the values for media, web, ribbon, and",
+      "The ^SS command is used to change the values for media, web, ribbon, and",
       "label length set during the media calibration process. The media calibration process is",
       "described in your specific printer’s user’s guide."
     ],
@@ -3852,7 +3843,7 @@
       "^STa,b,c,d,e,f,g"
     ],
     "description": [
-      "Description The ^ST command sets the date and time of the Real-Time Clock."
+      "The ^ST command sets the date and time of the Real-Time Clock."
     ],
     "parameters": [
       "a = month                  Accepted Values: 01 to 12",
@@ -3881,7 +3872,7 @@
       "^SXa,b,c,d,e,f"
     ],
     "description": [
-      "Description The ^SX command is used to configure the ZebraNet Alert System."
+      "The ^SX command is used to configure the ZebraNet Alert System."
     ],
     "parameters": [
       "a = condition type         Accepted Values:",
@@ -3948,7 +3939,7 @@
       "^SZa"
     ],
     "description": [
-      "Description The ^SZ command is used to select the programming language used by the",
+      "The ^SZ command is used to select the programming language used by the",
       "printer. This command gives you the ability to print labels formatted in both ZPL and ZPL II."
     ],
     "parameters": [
@@ -3965,7 +3956,7 @@
       "~TA###"
     ],
     "description": [
-      "Description The ~TA command lets you adjust the rest position of the media after a label is",
+      "The ~TA command lets you adjust the rest position of the media after a label is",
       "printed, which changes the position at which the label is torn or cut."
     ],
     "parameters": [
@@ -3984,7 +3975,7 @@
       "^TOs:o.x,d:o.x"
     ],
     "description": [
-      "Description The ^TO command is used to copy an object or group of objects from one",
+      "The ^TO command is used to copy an object or group of objects from one",
       "storage device to another. It is similar to the copy function used in PCs."
     ],
     "parameters": [
@@ -4016,7 +4007,7 @@
       "~WC"
     ],
     "description": [
-      "Description The ~WC command is used to generate a printer configuration label. The printer",
+      "The ~WC command is used to generate a printer configuration label. The printer",
       "configuration label contains information about the printer setup, such as sensor type, network",
       "ID, ZPL mode, firmware version, and descriptive data on the R:, E:, B:, and A: devices."
     ],
@@ -4027,7 +4018,7 @@
     "definition": "Print Directory Label",
     "format": [],
     "description": [
-      "Description The ^WD command is used to print a label listing bar codes, objects stored in",
+      "The ^WD command is used to print a label listing bar codes, objects stored in",
       "DRAM, or fonts."
     ],
     "parameters": [
@@ -4057,7 +4048,7 @@
       "^XA"
     ],
     "description": [
-      "Description The ^XA command is used at the beginning of ZPL II code. It is the opening",
+      "The ^XA command is used at the beginning of ZPL II code. It is the opening",
       "bracket and indicates the start of a new label format. This command is substituted with a single",
       "ASCII control character STX (control-B, hexadecimal 02)."
     ],
@@ -4070,7 +4061,7 @@
       "^XB"
     ],
     "description": [
-      "Description The ^XB command suppresses forward feed of media to tear-off position",
+      "The ^XB command suppresses forward feed of media to tear-off position",
       "depending on the current printer mode. Because no forward feed occurs, a backfeed before",
       "printing of the next label is not necessary; this improves throughput. When printing a batch of",
       "labels, the last label should not contain this command."
@@ -4084,7 +4075,7 @@
       "^XFd:o.x"
     ],
     "description": [
-      "Description The ^XF command recalls a stored format to be merged with variable data.",
+      "The ^XF command recalls a stored format to be merged with variable data.",
       "There can be multiple ^XF commands in one format, and they can be located anywhere within",
       "the code."
     ],
@@ -4103,7 +4094,7 @@
       "^XGd:o.x,mx,my"
     ],
     "description": [
-      "Description The ^XG command is used to recall one or more graphic images for printing.",
+      "The ^XG command is used to recall one or more graphic images for printing.",
       "This command is used in a label format to merge graphics, such as company logos and piece",
       "parts, with text data to form a complete label."
     ],
@@ -4128,7 +4119,7 @@
       "^XZ"
     ],
     "description": [
-      "Description The ^XZ command is the ending (closing) bracket. It indicates the end of a",
+      "The ^XZ command is the ending (closing) bracket. It indicates the end of a",
       "label format. When this command is received, a label prints. This command can also be issued",
       "as a single ASCII control character ETX (Control-C, hexadecimal 03)."
     ],
@@ -4141,7 +4132,7 @@
       "^ZZt,b"
     ],
     "description": [
-      "Description The ^ZZ command places the printer in an idle or shutdown mode."
+      "The ^ZZ command places the printer in an idle or shutdown mode."
     ],
     "parameters": [
       "t = number of              Accepted Values: 0 to 999999 – setting 0 disables automatic",
@@ -4152,803 +4143,6 @@
       "    shutdown                   Y = indicates to shutdown when labels are still queued",
       "                               N = indicates all labels must be printed before shutting down",
       "                           Default Value: N"
-    ]
-  },
-  {
-    "code": "^HR",
-    "definition": "Calibrate RFID Transponder Position",
-    "format": [
-      "^HRa,b"
-    ],
-    "description": [
-      "                  Important • This command is not supported by all printers or firmware. See Table 13",
-      "                  on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "a = start string               User text to appear before the results table.",
-      "                               Accepted values: any string less than 65 characters",
-      "                               Default value: start",
-      "b = end string                 User text to appear after the results table.",
-      "                               Accepted values: any string less than 65 characters",
-      "                               Default value: end"
-    ]
-  },
-  {
-    "code": "^RA",
-    "definition": "Read AFI or DSFID Byte",
-    "format": [
-      "^RA#,f,r,m,b"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "# = field number                  The value assigned to this parameter should be the same as the one used in the",
-      "    specified with                ^RT command.",
-      "    another command               Accepted values: 0 to 9999",
-      "                                  Default value: 0",
-      "f = format                        Accepted values:",
-      "                                      0 = ASCII",
-      "                                      1 = Hexadecimal",
-      "                                  Default value: 0",
-      "r = number of retries             Accepted values: 0 to 10",
-      "                                  Default value: 0",
-      "m = motion                        Accepted values:",
-      "                                      0 = Feed label after writing.",
-      "                                      1 = No Feed after writing. Other ZPL may cause a feed.",
-      "                                  Default value: 0",
-      "b = type of byte to read          Accepted values:",
-      "                                      A = AFI byte",
-      "                                      D = DSFID byte",
-      "                                  Default value: A"
-    ]
-  },
-  {
-    "code": "^RB",
-    "definition": "Define EPC Data Structure",
-    "format": [
-      "^RBn,p0,p1,p2, ..., p15"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "n = total bit size of the         Specify the number of bits to include in the partitions.",
-      "    partitions                    Accepted values: 1 to n, where n is the bit size of the tag.",
-      "                                  Default value: 96",
-      "p1 ... p15 =                      Specify the number of bits to include in the individual partitions. The partition",
-      "    partition sizes               sizes must add up to the bit size specified for the previous parameter. The",
-      "                                  largest individual partition size is 64 bits.",
-      "                                  Accepted values: 1 to 64",
-      "                                  Default value: 1"
-    ]
-  },
-  {
-    "code": "^RE",
-    "definition": "Enable/Disable E.A.S. Bit",
-    "format": [
-      "^REt,r"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "r = number of retries             Accepted values: 0 to 10",
-      "                                  Default value: 0"
-    ]
-  },
-  {
-    "code": "^RF",
-    "definition": "Read or Write RFID Format",
-    "format": [
-      "^RFo,f,b,n"
-    ],
-    "description": [
-      "                 Important • This command is not supported by all printers or firmware. See Table 13",
-      "                 on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "o = operation                 The action to be performed.",
-      "                              Accepted values:",
-      "                                 W = write to (encode) the tag",
-      "                                 L = write with LOCK (if supported by tag type; Gen 2 does not use this",
-      "                                        locking function)",
-      "                                 R = read the tag",
-      "                                 P = read password (Gen 2 only)",
-      "                              Default value: W",
-      "f = format                    Accepted values:",
-      "                                  A = ASCII",
-      "                                  H = Hexadecimal",
-      "                                  E = EPC (ensure proper setup with the ^RB command)",
-      "                              Default value: H",
-      "b = starting block            Gen 2 tags",
-      "    number                    Which password to read when P is specified for the operation.",
-      "                              Accepted values:",
-      "                                 K = kill password",
-      "                                 A = access password",
-      "                              Other Tag Types",
-      "                              Accepted values: 0 to n, where n is the maximum number of blocks for the tag.",
-      "                              Default value: 0",
-      "n = number of bytes to                  Note • This parameter is used only by the R4Mplus with firmware",
-      "    read or write                       version SP994X (R4Mplus European version)."
-    ]
-  },
-  {
-    "code": "^RI",
-    "definition": "Get RFID Tag ID",
-    "format": [
-      "^RI#,s,r,m"
-    ],
-    "description": [
-      "                Important • This command is not supported by all printers or firmware. See Table 13",
-      "                on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "# = number to be             Accepted values: 0 to 9999",
-      "    assigned to the field    Default value: 0",
-      "s = specify data order                 Note • This parameter applies only to the R110Xi HF and R2844-Z",
-      "                                       printers."
-    ]
-  },
-  {
-    "code": "^RM",
-    "definition": "Enable RFID Motion",
-    "format": [
-      "^RMe"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "e = enable                        Accepted values:",
-      "                                      Y = Yes, move the label",
-      "                                      N = No, do not move the label",
-      "                                  Default value: Y"
-    ]
-  },
-  {
-    "code": "^RN",
-    "definition": "Detect Multiple RFID Tags in Encoding Field",
-    "format": [
-      "^RNe"
-    ],
-    "description": [
-      "                Important • This command is not supported by all printers or firmware. See Table 13",
-      "                on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "e = enable                   Accepted Values:",
-      "                                 Y = Yes, check for multiple tags",
-      "                                 N = No, do not check for multiple tags",
-      "                             Default Value: Y"
-    ]
-  },
-  {
-    "code": "~RO",
-    "definition": "Reset Advanced Counters",
-    "format": [
-      "~ROc"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "c = counter to reset              Accepted Values:",
-      "                                      1 = counter 1",
-      "                                      2 = counter 2",
-      "                                      3 = valid RFID label counter",
-      "                                      4 = voided RFID label counter",
-      "                                  Default Value: None. If a value is not specified, the command is ignored."
-    ]
-  },
-  {
-    "code": "^RR",
-    "definition": "Specify RFID Retries for a Block",
-    "format": [
-      "^RRn"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "n = number of retries             Accepted values: 0 to 10",
-      "                                  Default value: 0"
-    ]
-  },
-  {
-    "code": "^RS",
-    "definition": "Set Up RFID Parameters",
-    "format": [
-      "^RSt,p,v,n,e,a,c,s"
-    ],
-    "description": [
-      "Description Use this command to set up RFID parameters including tag type, read/write",
-      "position of the transponder, and error handling."
-    ],
-    "parameters": [
-      "t = tag type                 Tells the printer/print engine which tag type you are using. If you specify a tag",
-      "                             type that is not supported by your printer or firmware, the printer uses the",
-      "                             default value. For the supported tag types and defaults, see Table 14",
-      "                             on page 308.",
-      "                             UHF Printers",
-      "                               0 = None",
-      "                               1 = EPC Class 0",
-      "                               2 = EPC Class 0 Plus",
-      "                               3 = EPC Class 1 64-bit",
-      "                               4 = EPC Class 1 96-bit",
-      "                               5 = UCODE EPC 1.19",
-      "                               6 = Impinj Class 0 Plus",
-      "                               7 = ISO 18000-06A",
-      "                               8 = EPC Class 1, Generation 2 (Gen 2)",
-      "                               9 = ISO 18000-06B",
-      "                             HF Printers",
-      "                                   Note • Only the R110Xi HF printer (firmware version R65.X.X)",
-      "                                   supports the use of letters for this parameter. All other printers use the",
-      "                                   numbers.",
-      "                                A or 0 = None",
-      "                                B or 1 = Auto detect (query tag to determine)",
-      "                                C or 2 = Tag*It (Texas Instruments Tagit tags)",
-      "                                D or 3 = I*code (Phillips Icode tags)",
-      "                                E or 4 = Pico Tag (Inside Technology’s)",
-      "                                F or 5 = ISO 15693",
-      "                                G or 6 = EPC tag (13.56 MHz)",
-      "                                H or 7 = UID Tag",
-      "                                I or 8 = Mifare UltraLight",
-      "p = read/write position of   Sets the read/write position of the transponder in vertical (Y axis) dot rows",
-      "    the transponder          from the top of the label. Set to 0 (no movement) if the transponder is already",
-      "                             in the effective area without moving the media.",
-      "                                     Important • If a label format specifies a value for this parameter, this",
-      "                                     value will be used for the programming position for all labels until a",
-      "                                     new position is specified or until the printer is turned off (O) and then",
-      "                                     back on (I).",
-      "                             Accepted values: 0 to label length",
-      "                             Default value:",
-      "                                  For the R110PAX4 and R2844-Z: 0",
-      "                                  For all other supported printers: label length minus 1 mm (1/16 in.)",
-      "v = length of void           Sets the length of the void printout in vertical (Y axis) dot rows.",
-      "    printout                 Accepted values: 0 to label length",
-      "                             Default value: label length",
-      "n = number of labels         The number of labels that will be attempted in case of read/encode failure.",
-      "                             Accepted values: 1 to 10",
-      "                             Default value: 3",
-      "e = error handling           If an error persists after the specified number of labels are tried, perform this",
-      "                             error handling action.",
-      "                             Accepted values:",
-      "                                  N = No action (printer drops the label format causing the error and moves",
-      "                                  to the next queued label)",
-      "                                  P = Place printer in Pause mode (label format stays in the queue until the",
-      "                                  user cancels)",
-      "                                  E = Place printer in Error mode (label format stays in the queue until the",
-      "                                  user cancels)",
-      "                             Default value: N",
-      "                                      Note • You can set the printer to send an error message to the host for",
-      "                                      each failure. To enable or disable this unsolicited error message, refer to",
-      "                                      the ^SX and ^SQ ZPL commands. Use V for the condition type for an",
-      "                                      RFID error.",
-      "a = signals on applicator          Note • This parameter does not apply to the R2844-Z. For the",
-      "                                   R4Mplus, this parameter applies only to printers with firmware version",
-      "                                   SP994X (R4Mplus European version)."
-    ]
-  },
-  {
-    "code": "^RT",
-    "definition": "Read RFID Tag",
-    "format": [
-      "^RT#,b,n,f,r,m,s"
-    ],
-    "description": [
-      "                Note • The ^RT command is provided only for backward-compatibility with label formats",
-      "                that were developed for older Zebra RFID printers. See Table 13 on page 287 for the list of",
-      "                printers and firmware with which you should not use this command."
-    ],
-    "parameters": [
-      "# = number to be             Accepted values: 0 to 9999",
-      "    assigned to the field    Default value: 0",
-      "b = starting block           Accepted values: 0 to n, where n is the maximum number of blocks for the tag.",
-      "    number                   Default value: 0",
-      "n = number of                        Note • This parameter does NOT apply to R4Mplus printers with",
-      "    blocks/bytes to read             firmware version SP920X (R4Mplus U.S. version).",
-      "                             For R4Mplus printers with firmware version SP994X (European version):",
-      "                             This parameter applies only when the starting block number (parameter b) is 1.",
-      "                             Accepted values: 1 to n, where n is the maximum number of bytes for the tag.",
-      "                             For UCODE EPC 1.19, n is 32.",
-      "                             Default value: 1",
-      "                             For all other supported printers:",
-      "                             Accepted values: 1 to n, where n is the maximum number of blocks for the tag",
-      "                             type minus the starting block number. For example, if the tag has 8 blocks",
-      "                             (starting with block 0) and you start with block 6, n can be 2. This would return",
-      "                             block 6 and block 7 information.",
-      "                             Default value: 1",
-      "f = format                   Accepted values:",
-      "                                 0 = ASCII",
-      "                                 1 = Hexadecimal",
-      "                             Default value: 0",
-      "r = number of retries        Changes the number of times that the printer attempts to read a particular block",
-      "                             of a single RFID tag. (Same retry rules as the ^RR command.)",
-      "                             Accepted values: 0 to 10",
-      "                             Default value: 0",
-      "m = motion                      Enables or disables RFID motion for the current field.",
-      "                                Accepted values:",
-      "                                    0 = Feed label after writing.",
-      "                                    1 = No feed after writing. Other ZPL may cause a feed.",
-      "                                Default value: 0",
-      "s = special mode                       Note • This parameter is used only for the printers referenced here."
-    ]
-  },
-  {
-    "code": "~RV",
-    "definition": "Report RFID Encoding Results",
-    "format": [
-      "~RVa"
-    ],
-    "description": [
-      "               Important • This command is not supported by all printers or firmware. See Table 13",
-      "               on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "a = enable/disable           Enables or disables the results reporting feature.",
-      "                             Accepted Values:",
-      "                                 E = Enable",
-      "                                 D = Disable",
-      "                             Default Value: E"
-    ]
-  },
-  {
-    "code": "^RW",
-    "definition": "Set RFID Read and Write Power Levels",
-    "format": [
-      "^RWr,w"
-    ],
-    "description": [
-      "                          Important • This command is not supported by all printers or firmware. See Table 13",
-      "                          on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "r = read power                    Sets the power level to match the desired output as calibrated in the factory.",
-      "                                  Accepted Values:",
-      "                                      H = high",
-      "                                      M = medium",
-      "                                      L = low",
-      "                                  Default Value: H",
-      "w = write power                           Note • This parameter is ignored on the R110Xi HF printer because",
-      "                                          read and write powers cannot be specified separately. The printer uses",
-      "                                          the value that you specified for read power for both the read and write",
-      "                                          power settings.",
-      "                                  Sets the power level to match the desired output as calibrated in the factory.",
-      "                                  Accepted Values:",
-      "                                      H = high",
-      "                                      M = medium",
-      "                                      L = low",
-      "                                  Default Value: H",
-      "a = RFID antenna                          Note • This parameter applies only to the R110Xi HF printer.",
-      "    selection"
-    ]
-  },
-  {
-    "code": "^RZ",
-    "definition": "Set RFID Tag Password and Lock Tag",
-    "format": [
-      "^RZp,m,l"
-    ],
-    "description": [
-      "                  Important • This command is not supported by all printers or firmware. See Table 13",
-      "                  on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "p = password                   Sets a password. Gen 2 tags use a 32-bit password and specify the memory",
-      "                               bank and lock style. Other tags use 8 bits and ignore the memory bank and lock",
-      "                               style. Use ^RF on page 297 to read the passwords.",
-      "                               Accepted values: 00 to FF (hexadecimal)",
-      "                               Default value: 00",
-      "m = memory bank                This parameter applies to Gen 2 tags only.",
-      "                               Accepted values:",
-      "                                   K = kill password",
-      "                                   A = access password",
-      "                                   E = EPC",
-      "                                   T = tag identifier (TID)",
-      "                                   U = user",
-      "                               Default value: none",
-      "l = lock style                 This parameter applies to Gen 2 tags only.",
-      "                               Accepted values:",
-      "                                   U = unlocked",
-      "                                   L = locked",
-      "                                   O = permanently unlocked (open)",
-      "                                   P = permanently locked (protected)",
-      "                                   W = write value (used only for the kill password memory bank)",
-      "                               Default value: none"
-    ]
-  },
-  {
-    "code": "^WF",
-    "definition": "Encode AFI or DSFID Byte",
-    "format": [
-      "^WFr,m,w,f,b"
-    ],
-    "description": [
-      "                Important • This command is not supported by all printers or firmware. See Table 13",
-      "                on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "r = number of retries        Accepted values: 0 to 10",
-      "                             Default value: 0",
-      "m = motion                   Accepted values:",
-      "                                 0 = Feed label after writing.",
-      "                                 1 = No Feed after writing. Other ZPL may cause a feed.",
-      "                             Default value: 0",
-      "w = write protect            Accepted values:",
-      "                                 0 = Not write protected",
-      "                                 1 = Write protect",
-      "                             Default value: 0",
-      "f = data format              Accepted values:",
-      "                                 0 = ASCII",
-      "                                 1 = Hexadecimal",
-      "                             Default value: 0",
-      "b = type of byte to read     Accepted values:",
-      "                                 A = AFI byte",
-      "                                 D = DSFID byte",
-      "                             Default value: A"
-    ]
-  },
-  {
-    "code": "^WT",
-    "definition": "Write (Encode) Tag",
-    "format": [
-      "^WTb,r,m,w,f,v"
-    ],
-    "description": [
-      "                Note • The ^WT command is provided only for backward-compatibility with label formats",
-      "                that were developed for older Zebra RFID printers. See Table 13 on page 287 for the list of",
-      "                printers and firmware with which you should not use this command."
-    ],
-    "parameters": [
-      "b = block number             Specifies the block number to encode. This parameter is tag-dependent.",
-      "                             • For most tags, use block 0.",
-      "                             • For EPC Class 0 Plus, block 0 is EPC data, and block 1 is user data.",
-      "                             • For the R4Mplus, this parameter does not apply to printers with firmware",
-      "                               version SP902X. With other versions of firmware in this printer, you can",
-      "                               encode 12 bytes (96 bits) to block 0, but you can encode only the first byte",
-      "                               of block 1.",
-      "                             Accepted values: 0 to n, where n is the maximum number of blocks for the tag.",
-      "                             Default value: 0",
-      "r = number of retries        Changes the number of times that the printer attempts to encode a particular",
-      "                             block of a single RFID tag. (Same function as the ^RR command.)",
-      "                             Accepted values: 0 to 10",
-      "                             Default value: 0",
-      "m = motion                   Enables or disables RFID motion. (Same function as the ^RM command.)",
-      "                             Accepted values:",
-      "                                 0 = Feed label after writing",
-      "                                 1 = No feed after writing (other ZPL may cause a feed)",
-      "                             Default value: 0",
-      "w = write protect            Accepted values:",
-      "                                 0 = Not write protected",
-      "                                 1 = Write protected",
-      "                             Default value: 0",
-      "f = data format              Accepted values:",
-      "                                 0 = ASCII",
-      "                                 1 = Hexadecimal",
-      "                             Default value: 0",
-      "                                    This parameter is not used in the R2844-Z.",
-      "     For the R110Xi HF:         For the R110Xi HF:",
-      "v = reverse the data order Reverses the data order.",
-      "                           Accepted values:",
-      "                              N = Do not reverse the data order (Most significant byte first for Tag*It",
-      "                                     and PicoTag. Last significant byte first for I*code and ISO 15693)",
-      "                              Y = Reverse the data order",
-      "                           Default value: N",
-      "For other supported            For other supported printers:",
-      "printers:                      For reliability, some manufacturers encode tags with known data (such as",
-      "v = verify valid data          A5A5). This parameter flags whether the preprogrammed data is verified.",
-      "                               (Same function as the ^WV command.)",
-      "                               Accepted values:",
-      "                                   N = Do not verify",
-      "                                   Y = Verify valid data before writing",
-      "                               Default value: N"
-    ]
-  },
-  {
-    "code": "^WV",
-    "definition": "Verify RFID Encoding Operation",
-    "format": [
-      "^WVe"
-    ],
-    "description": [
-      "                Important • This command is not supported by all printers or firmware. See Table 13",
-      "                on page 287 for the list of printers and firmware with which you can use this command."
-    ],
-    "parameters": [
-      "e = enable                   Accepted values: Y or N",
-      "                             Default value: N"
-    ]
-  },
-  {
-    "code": "^NB",
-    "definition": "Search for Wired Print Server during Network Boot",
-    "format": [
-      "^NBa"
-    ],
-    "description": [
-      "Description Use this command to tell the printer whether to search for a wired print server",
-      "at bootup. Table 15 shows the results of this check."
-    ],
-    "parameters": [
-      "a = check for wired print          Accepted Values: C (CHECK), S (SKIP CHECK)",
-      "    server at boot time            Default Value: S"
-    ]
-  },
-  {
-    "code": "^NN",
-    "definition": "Set SNMP",
-    "format": [
-      "^NNa,b,c,d,e,f"
-    ],
-    "description": [
-      "",
-      "               Note • Firmware versions SP1071 and SP1073 support SNMP traps only. Other SNMP",
-      "               parameters are not supported."
-    ],
-    "parameters": [
-      "a = system name             Same as printer name.",
-      "                            Accepted Values: Up to 17 alphanumeric characters",
-      "b = system contact          Any contact information as desired (such as a name or phrase)",
-      "                            Accepted Values: Up to 50 alphanumeric characters",
-      "c = system location         The printer’s model information.",
-      "                            Accepted Values: Up to 50 alphanumeric characters",
-      "d = get community name      Accepted Values: Up to 19 alphanumeric characters",
-      "                            Default Value: public",
-      "e = set community name      Accepted Values: Up to 19 alphanumeric characters",
-      "                            Default Value: public",
-      "f = trap community          Accepted Values: Up to 20 alphanumeric characters",
-      "    name                    Default Value: public"
-    ]
-  },
-  {
-    "code": "^NP",
-    "definition": "Set Primary/Secondary Device",
-    "format": [
-      "^NPa"
-    ],
-    "description": [
-      "Description Use this command to specify whether to use the printer’s or the print server’s",
-      "LAN/WLAN settings at boot time. The default is to use the printer’s settings."
-    ],
-    "parameters": [
-      "a = device to use as              Accepted Values: P (PRINTER), M (MPS/PRINTSERVER)",
-      "    primary"
-    ]
-  },
-  {
-    "code": "^NS",
-    "definition": "Change Wired Networking Settings",
-    "format": [
-      "^NSa,b,c,d,e,f,g,h,i"
-    ],
-    "description": [
-      "Description Use this command to change the wired print server network settings."
-    ],
-    "parameters": [
-      "a = IP resolution            Accepted Values:",
-      "                             A (ALL)",
-      "                             B (BOOTP)",
-      "                             C (DHCP AND BOOTP)",
-      "                             D (DHCP)",
-      "                             G (GLEANING ONLY)",
-      "                             R (RARP)",
-      "                             P (PERMANENT)",
-      "                             Note • Use of GLEANING ONLY is not recommended when the Wireless",
-      "                             Print Server is installed."
-    ]
-  },
-  {
-    "code": "^NT",
-    "definition": "Set SMTP",
-    "format": [
-      "^NTa,b"
-    ],
-    "description": [
-      "Description Use this command to set the Simple Mail Transfer Protocol (SMTP)",
-      "parameters. This allows you to set the e-mail settings for alerts."
-    ],
-    "parameters": [
-      "a = SMTP server address           Accepted Values: Any properly formatted server address in the",
-      "                                  xxx.xxx.xxx.xxx format",
-      "b = print server domain           Accepted Values: Any properly formatted print server domain name. A domain",
-      "                                  name is one or more labels separated by a period (“dot”), and a label consists of",
-      "                                  letters, numbers, and hyphens. An example of a domain name is zebra.com"
-    ]
-  },
-  {
-    "code": "^NW",
-    "definition": "Set Web Authentication Timeout Value",
-    "format": [
-      "^NWa"
-    ],
-    "description": [
-      "Description Use this command to set the timeout value for the printer home page. The",
-      "printer will prompt for the printer password only the first time that certain screens are accessed",
-      "until 1) the web authentication timeout value is reached (default value is 5 minutes) or",
-      "2) the printer is reset. At that time, the printer will prompt for the password again."
-    ],
-    "parameters": [
-      "a = timeout value            The timeout value in minutes for an IP address to be authenticated to the printer",
-      "                             web pages.",
-      "                             Accepted Values: 0 (no secure pages can be accessed without entering the",
-      "                             printer password) to 255 minutes",
-      "                             Default Value: 5"
-    ]
-  },
-  {
-    "code": "^WA",
-    "definition": "Set Antenna Parameters",
-    "format": [
-      "^WAa,b"
-    ],
-    "description": [
-      "Description Use this command to set the values for the receive and transmit antenna."
-    ],
-    "parameters": [
-      "a = receive antenna               Accepted Values: D (Diversity), L (Left), R (Right)",
-      "                                  Default Value: D",
-      "b = transmit antenna              Accepted Values: D (Diversity), L (Left), R (Right)",
-      "                                  Default Value: D"
-    ]
-  },
-  {
-    "code": "^WE",
-    "definition": "Set WEP Mode",
-    "format": [
-      "^WEa,b,c,d,e,f,g,h"
-    ],
-    "description": [
-      "Description Use this command to command enable Wired Equivalent Privacy (WEP) mode",
-      "and set WEP values. WEP is a security protocol for wireless local area networks (WLANs)."
-    ],
-    "parameters": [
-      "a = encryption mode           Accepted Values: OFF, 40 (40-bit encryption), 128 (128-bit encryption)",
-      "                              Default Value: OFF",
-      "b = encryption index          Tells the printer which encryption key to use.",
-      "                              Accepted Values: 1 (Key 1), 2 (Key 2), 3 (Key 3), 4 (Key 4)",
-      "                              Default Value: 1",
-      "c = authentication type       Accepted Values: O (Open System), S (Shared Key)",
-      "                              Default Value: O",
-      "                                     Note • If you enable Shared Key authentication with Encryption Mode",
-      "                                     set to OFF, this value resets to Open."
-    ]
-  },
-  {
-    "code": "^WI",
-    "definition": "Change Wireless Network Settings",
-    "format": [
-      "^WIa,b,c,d,e,f,g,h,i"
-    ],
-    "description": [
-      "Description Use this command to change the wireless network settings."
-    ],
-    "parameters": [
-      "a = IP resolution            Accepted Values:",
-      "                             A (ALL)",
-      "                             B (BOOTP)",
-      "                             C (DHCP AND BOOTP)",
-      "                             D (DHCP)",
-      "                             G (GLEANING ONLY)",
-      "                             R (RARP)",
-      "                             P (PERMANENT)",
-      "                             Note • Use of GLEANING ONLY is not recommended when the Wireless",
-      "                             Print Server is installed."
-    ]
-  },
-  {
-    "code": "^WL",
-    "definition": "Set LEAP Parameters",
-    "format": [
-      "^WLa,b,c"
-    ],
-    "description": [
-      "Description Use this command to enable Cisco® Lightweight Extensible Authentication",
-      "Protocol (LEAP) mode and set parameters. LEAP is user authentication method that is",
-      "available with some wireless cards."
-    ],
-    "parameters": [
-      "a = mode                          Accepted Values: OFF, ON",
-      "                                  Default Value: OFF",
-      "b = user name                     Default Value: Any 4 to 40 alphanumeric characters user",
-      "c = password                      Default Value: Any 4 to 40 alphanumeric characters password"
-    ]
-  },
-  {
-    "code": "~WL",
-    "definition": "Print Network Configuration Label",
-    "format": [
-      "~WL"
-    ],
-    "description": [
-      "Description Use this command to generate a network configuration label (Figure 4)."
-    ],
-    "parameters": []
-  },
-  {
-    "code": "^WP",
-    "definition": "Set Wireless Password",
-    "format": [
-      "^WPa,b"
-    ],
-    "description": [
-      "Description Use this command to set the four-digit wireless password (not the same as the",
-      "general printer password). If the wireless password is 0000, the Wireless and Wireless Plus",
-      "print servers run in an “unprotected” mode, which means that you do not need to enter the",
-      "wireless password through the control panel to view or modify wireless settings."
-    ],
-    "parameters": [
-      "a = old wireless                  Accepted Values: 0000 through 9999",
-      "    password                      Default Value: 0000",
-      "b = new wireless                  Accepted Values: 0000 through 9999",
-      "    password                      Default Value: 0000"
-    ]
-  },
-  {
-    "code": "^WR",
-    "definition": "Set Transmit Rate",
-    "format": [
-      "^WRa,b,c,d,e"
-    ],
-    "description": [
-      "Description Use this command to change the transmission parameters."
-    ],
-    "parameters": [
-      "a = rate 1                   Sets the 1 Mb/s transmit rate.",
-      "                             Accepted Values: Y (On), N (Off)",
-      "b = rate 2                   Sets the 2 Mb/s transmit rate.",
-      "                             Accepted Values: Y (On), N (Off)",
-      "c = rate 5.5                 Sets the 5.5 Mb/s transmit rate.",
-      "                             Accepted Values: Y (On), N (Off)",
-      "d = rate 11                  Sets the 11 Mb/s transmit rate.",
-      "                             Accepted Values: Y (On), N (Off)",
-      "e = transmit power           Accepted Values: 1, 5, 20, 30, 50, 100"
-    ]
-  },
-  {
-    "code": "~WR",
-    "definition": "Reset Wireless Card",
-    "format": [
-      "~WR"
-    ],
-    "description": [
-      "Description Use this command to reinitialize the wireless card and the print server (wired or",
-      "wireless) when the Wireless or Wireless Plus print server is running. The command also causes",
-      "any wireless card in the printer to reassociate to the wireless network. Same function as the",
-      "RESET NETWORK control panel parameter."
-    ],
-    "parameters": []
-  },
-  {
-    "code": "^WS",
-    "definition": "Set Wireless Card Values",
-    "format": [
-      "^WSe,o,p"
-    ],
-    "description": [
-      "Description Use this command to set the wireless card values for ESSID, Operating Mode,",
-      "and Card Preamble."
-    ],
-    "parameters": [
-      "e = ESSID value              Accepted Values: Any value up to 32 characters, including all ASCII and",
-      "                             Extended ASCII characters, including the space character. When this",
-      "                             parameter is left blank, the ESSID is not changed.",
-      "                             Default Value: 125",
-      "o = operating mode           Accepted Values: I (Infrastructure), A (Adhoc)",
-      "                             Default Value: I",
-      "p = wireless card            Accepted Values: L (Long), S (Short)",
-      "    preamble                 Default Value: L"
     ]
   }
 ]

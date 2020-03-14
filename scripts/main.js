@@ -7,7 +7,7 @@ const DEFINITION = 2
 const DESCRIPTION = 3
 const PARAMETERS = 4
 
-const mainDocument = data.slice(1283)
+const mainDocument = data.slice(1282, 11668)
 let isOddPage = false
 let startPageIndex = 0
 let currentCode
@@ -105,14 +105,14 @@ const cleanedCommands = commands.map(function (c) {
   }
 })
 
-fs.writeFileSync('zpl.json', JSON.stringify(cleanedCommands, null, 2))
+fs.writeFileSync('../src/main/resources/zpl.json', JSON.stringify(cleanedCommands, null, 2))
 console.log(cleanedCommands)
 
 
 function cleanDescription (d) {
   const padding = d[0].indexOf('D')
   const withoutPadding = d.map(line => line.substring(padding))
-  withoutPadding[0].replace('Description ', '')
+  withoutPadding[0] = withoutPadding[0].replace('Description ', '')
   return withoutPadding
 }
 
