@@ -1,3 +1,4 @@
+import com.intellij.codeInsight.hint.HintManager;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -28,6 +29,8 @@ public class PopupDialogAction extends AnAction {
         Document document = editor.getDocument();
         int lineStartOffset = document.getLineStartOffset(position.line);
         document.getText(new TextRange(lineStartOffset, offset));
+        // HintManager.getInstance().showErrorHint(editor, "AAA");
+        HintManager.getInstance().showInformationHint(editor, "AAAA");
     }
 }
 
