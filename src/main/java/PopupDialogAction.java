@@ -39,20 +39,11 @@ public class PopupDialogAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        final Project project = e.getProject();
         final Editor editor = e.getData(CommonDataKeys.EDITOR);
-        System.out.println("Aaaa");
         if (editor == null) {
             return;
         }
-        LogicalPosition position = editor.getCaretModel().getPrimaryCaret().getLogicalPosition();
-        int offset = editor.getCaretModel().getPrimaryCaret().getOffset();
-        LogicalPosition startOfLine = new LogicalPosition(position.line, 0);
-        Document document = editor.getDocument();
-        int lineStartOffset = document.getLineStartOffset(position.line);
-        document.getText(new TextRange(lineStartOffset, offset));
-        // HintManager.getInstance().showErrorHint(editor, "AAA");
-        HintManager.getInstance().showInformationHint(editor, "AAAA");
+
         Map<String, ZPLCommand> commands;
         try {
             commands = getCommands();
@@ -60,6 +51,31 @@ public class PopupDialogAction extends AnAction {
             HintManager.getInstance().showErrorHint(editor, "Could not load plugin");
             return;
         }
+
+
+        LogicalPosition position = editor.getCaretModel().getPrimaryCaret().getLogicalPosition();
+        int offset = editor.getCaretModel().getPrimaryCaret().getOffset();
+        LogicalPosition startOfLine = new LogicalPosition(position.line, 0);
+        Document document = editor.getDocument();
+        int lineStartOffset = document.getLineStartOffset(position.line);
+        int lineEndOffset = document.getLineEndOffset(position.line);
+        String text = document.getText(new TextRange(lineStartOffset, Math.min(lineEndOffset, offset + 3)));
+
+        for (int i = Math.min(text.length() - 3, offset - lineStartOffset); i >= 0; i--) {
+            char c = text.charAt(i);
+            if (c == '~' || c == '^') {
+                String code = text.substring(i, i + 3);
+                ZPLCommand zplCommand = commands.get(code);
+                if (zplCommand == null) {
+                    HintManager.getInstance().showInformationHint(editor, "Could not find command");
+                    return;
+                }
+                String definition = zplCommand.getDefinition();
+                HintManager.getInstance().showInformationHint(editor, String.format("%s %s", code, definition));
+                return;
+            }
+        }
+        HintManager.getInstance().showInformationHint(editor, "Could not find command");
         System.out.println(commands);
 
     }
