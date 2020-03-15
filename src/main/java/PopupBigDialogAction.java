@@ -2,7 +2,7 @@ import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import org.jetbrains.annotations.NotNull;
 
-public class PopupDialogAction extends AnAction {
+public class PopupBigDialogAction extends AnAction {
     @Override
     public void update(@NotNull AnActionEvent e) {
         super.update(e);
@@ -10,7 +10,7 @@ public class PopupDialogAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        ZPLPopup.showPopup(e, false);
+        ZPLPopup.showPopup(e, true);
     }
 }
 

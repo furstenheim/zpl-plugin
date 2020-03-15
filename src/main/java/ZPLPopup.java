@@ -11,18 +11,14 @@ import com.intellij.openapi.ui.popup.JBPopup;
 import com.intellij.openapi.ui.popup.JBPopupFactory;
 import com.intellij.openapi.util.Disposer;
 import com.intellij.openapi.util.TextRange;
-import com.intellij.ui.popup.PopupFactoryImpl;
-import com.intellij.util.ObjectUtils;
 import com.sun.istack.NotNull;
-import org.assertj.core.util.Strings;
-import static org.apache.commons.lang.StringEscapeUtils.escapeHtml;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
+import static org.apache.commons.lang.StringEscapeUtils.escapeHtml;
 
 public class ZPLPopup {
     public static void showPopup (@NotNull AnActionEvent e, boolean showFullPopup) {

@@ -16,9 +16,11 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="PopupDialogAction" class="PopupDialogAction" text="Describe ZPL Command"
-                description="......................">
-            <!--<add-to-group group-id="FileMenu" anchor="first"/>-->
+        <action id="ZPLDescribe" class="PopupDialogAction" text="Describe ZPL Command"
+                >
+        </action>
+        <action id="ZPLQuickDocumentation" class="PopupBigDialogAction" text="ZPL Command. Quick Documention"
+                >
         </action>
     </actions>
 </idea-plugin>
