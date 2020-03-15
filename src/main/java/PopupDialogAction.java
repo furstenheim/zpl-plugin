@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 public class PopupDialogAction extends AnAction {
-    static Map<String, ZPLCommand> commands;
     @Override
     public void update(@NotNull AnActionEvent e) {
         super.update(e);
@@ -29,45 +28,7 @@ public class PopupDialogAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        final Editor editor = e.getData(CommonDataKeys.EDITOR);
-        if (editor == null) {
-            return;
-        }
-
-        Map<String, ZPLCommand> commands;
-        try {
-            commands = ZPLConfiguration.getCommands();
-        } catch (IOException ex) {
-            HintManager.getInstance().showErrorHint(editor, "Could not load plugin");
-            return;
-        }
-
-
-        LogicalPosition position = editor.getCaretModel().getPrimaryCaret().getLogicalPosition();
-        int offset = editor.getCaretModel().getPrimaryCaret().getOffset();
-        LogicalPosition startOfLine = new LogicalPosition(position.line, 0);
-        Document document = editor.getDocument();
-        int lineStartOffset = document.getLineStartOffset(position.line);
-        int lineEndOffset = document.getLineEndOffset(position.line);
-        String text = document.getText(new TextRange(lineStartOffset, Math.min(lineEndOffset, offset + 3)));
-
-        for (int i = Math.min(text.length() - 3, offset - lineStartOffset); i >= 0; i--) {
-            char c = text.charAt(i);
-            if (c == '~' || c == '^') {
-                String code = text.substring(i, i + 3);
-                ZPLCommand zplCommand = commands.get(code);
-                if (zplCommand == null) {
-                    HintManager.getInstance().showInformationHint(editor, "Could not find command");
-                    return;
-                }
-                String definition = zplCommand.getDefinition();
-                HintManager.getInstance().showInformationHint(editor, String.format("%s %s", code, definition));
-                return;
-            }
-        }
-        HintManager.getInstance().showInformationHint(editor, "Could not find command");
-        System.out.println(commands);
-
+        ZPLPopup.showPopup(e, true);
     }
 }
 
