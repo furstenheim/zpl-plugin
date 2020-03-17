@@ -1,9 +1,9 @@
 <idea-plugin>
     <id>com.furstenheim.zpl-plugin</id>
-    <name>Zpl Plugin</name>
-
+    <name>ZPL Plugin</name>
+    <vendor>Gabriel Fürstenheim</vendor>
     <description><![CDATA[
-    Zpl language support
+    ZPL (Zebra programming language) support. Used for printing labels
 ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

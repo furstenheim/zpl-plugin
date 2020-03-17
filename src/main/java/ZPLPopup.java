@@ -55,6 +55,9 @@ public class ZPLPopup {
                 String definition = zplCommand.getDefinition();
                 if (showFullPopup) {
                     final Project project = e.getProject();
+                    if (project == null) {
+                        return;
+                    }
                     DocumentationManager documentationManager = DocumentationManager.getInstance(project);
                     final DocumentationComponent component = new DocumentationComponent(documentationManager);
                     List<String> parameters = zplCommand.getParameters();
