@@ -21,8 +21,7 @@ public class ZPLConfiguration {
         URL resource = classLoader.getResource("zpl.json");
         try {
             System.out.println(resource);
-            JsonParser jsonParser = new JsonParser();
-            JsonElement configuration = jsonParser.parse(new InputStreamReader(resource.openStream()));
+            JsonElement configuration = JsonParser.parseReader(new InputStreamReader(resource.openStream()));
             JsonArray commandsAsJson = configuration.getAsJsonArray();
             Gson gson = new Gson();
             commands = StreamSupport.stream(commandsAsJson.spliterator(), false)

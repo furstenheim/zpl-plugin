@@ -1,9 +1,13 @@
 <idea-plugin>
     <id>com.furstenheim.zpl-plugin</id>
-    <name>ZPL Plugin</name>
+    <name>Zebra programming language (ZPL)</name>
     <vendor>Gabriel Fürstenheim</vendor>
     <description><![CDATA[
-    ZPL (Zebra programming language) support. Used for printing labels
+    <h1> ZPL (Zebra programming language) support.</h1>
+     <p> Used for printing labels </p>
+     <p> This plugin exposes two commands "Describe ZPL Command" and "ZPL Command. Quick Documentation". They allow easy checking of ZPL documentation. </p>
+     <p> The plugin works in any file type so that it can be used in templates as well. Not just in raw ZPL files.</p>
+
 ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -14,12 +18,26 @@
         <!-- Add your extensions here -->
     </extensions>
 
+    <change-notes>
+        <![CDATA[
+        <b>1.0.5</b><br>
+        <ul>
+          <li>Improve documentation</li>
+          <li>Remove deprecated dependency</li>
+        </ul>
+        <b>1.0.4 </b><br>
+        <ul>
+          <li>Initial release. Includes compare multicursors</li>
+        </ul>
+        ]]>
+        </change-notes>
+    <version>1.0.5</version>
     <actions>
         <!-- Add your actions here -->
-        <action id="ZPLDescribe" class="PopupDialogAction" text="Describe ZPL Command"
+        <action id="ZPLDescribe" class="PopupBigDialogAction" text="Describe ZPL Command" description="Long definition and parameters of ZPL command"
                 >
         </action>
-        <action id="ZPLQuickDocumentation" class="PopupBigDialogAction" text="ZPL Command. Quick Documention"
+        <action id="ZPLQuickDocumentation" class="PopupDialogAction" text="ZPL Command. Quick Documentation" description="Short lookup of command"
                 >
         </action>
     </actions>

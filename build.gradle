@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.furstenheim'
-version '1.0-SNAPSHOT'
+version '1.0.5-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.google.code.gson:gson:2.9.0'
 }
 
 publishPlugin {
@@ -25,7 +26,8 @@ intellij {
     version '2019.3.1'
 }
 patchPluginXml {
+    sinceBuild '190'
+    untilBuild '230'
     changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
+      Make plugin compatible with newer versions."""
 }
