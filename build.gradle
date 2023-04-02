@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.furstenheim'
-version '1.0.5-SNAPSHOT'
+version '1.0.6-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -27,7 +27,6 @@ intellij {
 }
 patchPluginXml {
     sinceBuild '190'
-    untilBuild '230'
     changeNotes """
       Make plugin compatible with newer versions."""
 }
